@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+--main-color: #0f0f0a87;
+--primary-color: #7289da;
+--gray-color: #4f4f4f;
+}
+
+body{
+    background-color: var(--main-color);
+}
+form{
+    border: 2px solid rgba(255, 255, 255, 0.224);
+    border-radius: 5px;
+    width: 30%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1.2;
+    margin-left: 110px;
+    margin-top: 40px;
+}
+form input {
+    padding: 6px;
+    width: 230px;
+    outline: none;
+
+}
+input[type='submit']{
+    width: 90px;
+    background: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.already {
+    margin-top: 60px;
+
+}
+form p{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:white;
+
+}
+
+.input-container p.msg {
+    visibility: hidden;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.input-container.error p.msg{
+    visibility: visible;
+}
+
+
+.content h1{
+    position: absolute;
+    top: 62%;
+    right: 27%;
+    font-size: 4rem;
+    color: #7c007edc;
+}
+
+.input-container.error input {
+    border-color: red;
+}
+
+.input-container.success input {
+    border-color: rgb(216, 14, 81);
+}
+img {
+    width: 30%;
+    position: absolute;
+    top: 35px;
+    right: 20%
+}
